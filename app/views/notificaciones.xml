@@ -1,0 +1,18 @@
+<Alloy>
+	<Window class="container" exitOnClose="true" fullscreen="false" title="Avisos">
+		<View id="main">
+			<TableView id="tableviewestados">	
+            	<TableViewSection id="tableviewsec">
+                	<TableViewRow onClick="btnabrirnotif">
+                		<View class="notifcontent">
+                			<ImageView class="imagenusuario" image="/icon_examen.png" />
+                			<Label class="labelnombre" text="Examen de mate"/>
+                			<Label class="labelmensaje" text="Clases | Calendario"/>                			
+                			<Label class="labelhora" text="10:20 a.m."/>
+                		</View>
+                	</TableViewRow>
+                </TableViewSection>
+			</TableView>
+		</View>
+	</Window>
+</Alloy>
