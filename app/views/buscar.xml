@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container" exitOnClose="true" fullscreen="false" title="Buscar">
+		<View id="main">
+			<TableView id="tableview">
+	            <TableViewRow class="tabla" title="Contaduria" />
+	            <TableViewRow class="tabla" title="Cafeteria" />
+	            <TableViewRow class="tabla" title="Lobobici" />
+	            <TableViewRow class="tabla" title="biblioteca" />
+        	</TableView>			
+		</View>
+	</Window>
+</Alloy>
