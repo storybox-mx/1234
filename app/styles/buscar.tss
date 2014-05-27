@@ -1,0 +1,28 @@
+".container":{
+	backgroundColor:"white",
+	//OCULTAR NAV BAR
+	//navBarHidden: true,
+	orientationModes: [
+        //Ti.UI.LANDSCAPE_LEFT,
+        //Ti.UI.LANDSCAPE_RIGHT,
+        Ti.UI.PORTRAIT,
+        Ti.UI.UPSIDE_PORTRAIT
+    ] 
+},
+
+"#main":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	backgroundColor:"#b9bfc3",
+	left: 0,
+	layout: "vertical"
+},
+//Contenido
+"#tableview":{
+	color:"#252525",
+	top:"10"
+},
+".tabla":{
+	height:"50dp",
+	backgroundColor:"#252525"
+}
