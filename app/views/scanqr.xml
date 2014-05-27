@@ -1,5 +1,0 @@
-<Alloy>
-	<Window id="scanqr" class="container" exitOnClose="true" fullscreen="false" title="Scanear">
-	
-	</Window>
-</Alloy>

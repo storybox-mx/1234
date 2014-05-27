@@ -1,7 +1,0 @@
-<Alloy>
-	<Window class="container" exitOnClose="true" fullscreen="false" title="Chat">
-		<View id="main">
-		
-		</View>
-	</Window>
-</Alloy>
