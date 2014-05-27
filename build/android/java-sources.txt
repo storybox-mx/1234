@@ -1,0 +1,7 @@
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/ApplicationStylesheet.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/AssetCryptImpl.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/Buap_homeActivity.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/Buap_homeAppInfo.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/Buap_homeApplication.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/Manifest.java"
+"F:/BUAP/titanium/Buap_Home/build/android/gen/com/projer/buaphome/R.java"
