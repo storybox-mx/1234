@@ -26,6 +26,10 @@ function Controller() {
     function doClick() {
         alert("click hotbottom");
     }
+    function openmapa() {
+        var openmapa = Alloy.createController("maps").getView();
+        openmapa.open();
+    }
     function openscan() {
         openScanner();
     }
@@ -383,7 +387,7 @@ function Controller() {
         id: "__alloyId139"
     });
     $.__views.viewbotoneshome.add($.__views.__alloyId139);
-    doClick ? $.__views.__alloyId139.addEventListener("click", doClick) : __defers["$.__views.__alloyId139!click!doClick"] = true;
+    openmapa ? $.__views.__alloyId139.addEventListener("click", openmapa) : __defers["$.__views.__alloyId139!click!openmapa"] = true;
     $.__views.__alloyId140 = Ti.UI.createButton({
         title: "Agenda",
         top: "60",
@@ -444,6 +448,32 @@ function Controller() {
         e.cancelBubble = true;
         $.index.close();
     });
+    var MapModule = require("ti.map");
+    var rc = MapModule.isGooglePlayServicesAvailable();
+    switch (rc) {
+      case MapModule.SUCCESS:
+        Ti.API.info("Google Play services is installed.");
+        break;
+
+      case MapModule.SERVICE_MISSING:
+        alert("Google Play services is missing. Please install Google Play services from the Google Play store.");
+        break;
+
+      case MapModule.SERVICE_VERSION_UPDATE_REQUIRED:
+        alert("Google Play services is out of date. Please update Google Play services.");
+        break;
+
+      case MapModule.SERVICE_DISABLED:
+        alert("Google Play services is disabled. Please enable Google Play services.");
+        break;
+
+      case MapModule.SERVICE_INVALID:
+        alert("Google Play services cannot be authenticated. Reinstall Google Play services.");
+        break;
+
+      default:
+        alert("Unknown error.");
+    }
     $.index.open();
     __defers["$.__views.cambiarestado!click!cambiarestado"] && $.__views.cambiarestado.addEventListener("click", cambiarestado);
     __defers["$.__views.chat!click!chat"] && $.__views.chat.addEventListener("click", chat);
@@ -454,7 +484,7 @@ function Controller() {
     __defers["$.__views.__alloyId136!click!openscan"] && $.__views.__alloyId136.addEventListener("click", openscan);
     __defers["$.__views.__alloyId137!click!doClick"] && $.__views.__alloyId137.addEventListener("click", doClick);
     __defers["$.__views.__alloyId138!click!doClick"] && $.__views.__alloyId138.addEventListener("click", doClick);
-    __defers["$.__views.__alloyId139!click!doClick"] && $.__views.__alloyId139.addEventListener("click", doClick);
+    __defers["$.__views.__alloyId139!click!openmapa"] && $.__views.__alloyId139.addEventListener("click", openmapa);
     __defers["$.__views.__alloyId140!click!doClick"] && $.__views.__alloyId140.addEventListener("click", doClick);
     __defers["$.__views.__alloyId141!click!doClick"] && $.__views.__alloyId141.addEventListener("click", doClick);
     _.extend($, exports);

@@ -13,4 +13,6 @@ if( OS_ANDROID ) {
 	Alloy.Globals.Android = { 
 		"Api" : Ti.Platform.Android.API_LEVEL
 	};
-}
+};
+// Loads the map module, which can be referenced by Alloy.Globals.Map
+Alloy.Globals.Map = require('ti.map');

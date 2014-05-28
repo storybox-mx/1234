@@ -1,0 +1,1 @@
+module.exports = [{"isId":true,"priority":100000.0055,"key":"mapview","style":{region:{latitude:33.74511,longitude:-84.38993,latitudeDelta:0.01,longitudeDelta:0.01,},}},{"isId":true,"priority":100000.0056,"key":"appcHQ","style":{latitude:37.390749,longitude:-122.081651,title:"Appcelerator Headquarters",subtitle:"Mountain View, CA",pincolor:Alloy.Globals.Map.ANNOTATION_RED,}}];

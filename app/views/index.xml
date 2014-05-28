@@ -67,7 +67,7 @@
         		<Button class="button" onClick="doClick" title="Alimenta tus neuronas" top="60" left="5" width="49%" height="50" />
         		<Button class="button" onClick="doClick" title="Lobomercado" top="110" left="5" width="49%" height="50" />
         		 
-        		<Button class="button" onClick="doClick" title="Mapa" top="10" right="5" width="49%" height="50" />
+        		<Button class="button" onClick="openmapa" title="Mapa" top="10" right="5" width="49%" height="50" />
         		<Button class="button" onClick="doClick" title="Agenda" top="60" right="5" width="49%" height="50" />
         		<Button class="button" onClick="doClick" title="Noticias" top="110" right="5" width="49%" height="50" />
         	</View>
